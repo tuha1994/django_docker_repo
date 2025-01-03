@@ -1,0 +1,286 @@
+<!-- home/templates/home/index.html -->
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row w-100 justify-content-between align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="display-4 fw-bold">Dịch vụ cloud chi phí hợp lý</h1>
+                <p class="lead">
+                    Tối ưu hóa dịch vụ DigitalOcean với CloudAZ. Hãy để chúng tôi xử lý các vấn đề kỹ thuật, hóa đơn, 
+                    giúp bạn tiết kiệm thời gian và công sức của doanh nghiệp, đồng thời tối ưu chi phí vận hành.
+                </p>
+                <div class="mt-4">
+                    <a href="#contact" class="btn btn-primary btn-lg me-3">Đăng ký</a>
+                    <a href="#features" class="btn btn-outline-primary btn-lg">Dùng thử miễn phí</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="{% static 'home/images/hero-image.png' %}" alt="Hero Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <!-- <h2 class="text-center mb-5">Our Features</h2> -->
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-check-circle fa-3x mb-3 text-primary"></i>
+                        <h4>Đơn giản và dễ sử dụng</h4>
+                        <p>Cung cấp giao diện người dùng trực quan, dễ sử dụng, giúp các developers và doanh nghiệp SMBs dễ dàng triển khai và quản lý các dịch vụ đám mây mà không cần phải có kiến thức chuyên sâu về công nghệ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-dollar-sign fa-3x mb-3 text-primary"></i>
+                        <h4>Chi phí hợp lý</h4>
+                        <p>Doanh nghiệp có thể bắt đầu khởi tạo VM trên DigitalOcean chỉ từ $5/tháng, giúp các doanh nghiệp tiết kiệm chi phí khi sử dụng các giải pháp đám mây mà không ảnh hưởng đến hiệu suất.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tachometer-alt fa-3x mb-3 text-primary"></i>
+                        <h4>Tốc độ và hiệu suất cao</h4>
+                        <p>Cung cấp các máy chủ với cấu hình mạnh mẽ, sử dụng SSD và kết nối mạng nhanh chóng, giúp các ứng dụng và trang web hoạt động mượt mà với hiệu suất ổn định.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-expand-arrows-alt fa-3x mb-3 text-primary"></i>
+                        <h4>Tính linh hoạt và mở rộng dễ dàng</h4>
+                        <p>Cung cấp khả năng mở rộng tài nguyên một cách dễ dàng, cho phép người dùng tăng cường dung lượng bộ nhớ, CPU và lưu trữ khi cần thiết mà không gặp phải phức tạp, giúp doanh nghiệp phát triển một cách linh hoạt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="clients" class="py-5 bg-light">
+    <div class="elementor-container elementor-column-gap-no">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30f2bc6" data-id="30f2bc6" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-65e4af4 elementor-widget elementor-widget-heading" data-id="65e4af4" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h5 class="elementor-heading-title elementor-size-default">Khách hàng của chúng tôi</h5>
+                    </div>
+                </div>
+                <section class="elementor-section elementor-inner-section elementor-element elementor-element-2601015 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2601015" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-no">
+                        <!-- Client Logo 1 -->
+                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5c3ff92" data-id="5c3ff92" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-18aa19c elementor-widget elementor-widget-image animated fadeInUp" data-id="18aa19c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <a href="#">
+                                            <img decoding="async" width="168" height="41" src="https://templatekits.themewarrior.com/stellar/wp-content/uploads/sites/50/2022/03/logo-ipsum1.png" class="elementor-animation-bob attachment-full size-full wp-image-87" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Client Logo 2 -->
+                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-d607c6b" data-id="d607c6b" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-5a69216 elementor-widget elementor-widget-image animated fadeInUp" data-id="5a69216" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <a href="#">
+                                            <img decoding="async" width="171" height="41" src="https://templatekits.themewarrior.com/stellar/wp-content/uploads/sites/50/2022/03/logo-ipsum2.png" class="elementor-animation-bob attachment-full size-full wp-image-90" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Client Logo 3 -->
+                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-7dc63af" data-id="7dc63af" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-b664546 elementor-widget elementor-widget-image animated fadeInUp" data-id="b664546" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <a href="#">
+                                            <img loading="lazy" decoding="async" width="169" height="42" src="https://templatekits.themewarrior.com/stellar/wp-content/uploads/sites/50/2022/03/logo-ipsum3.png" class="elementor-animation-bob attachment-full size-full wp-image-70" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Client Logo 4 -->
+                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-6610525" data-id="6610525" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-f9c59eb elementor-widget elementor-widget-image animated fadeInUp" data-id="f9c59eb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <a href="#">
+                                            <img loading="lazy" decoding="async" width="171" height="41" src="https://templatekits.themewarrior.com/stellar/wp-content/uploads/sites/50/2022/03/logo-ipsum4.png" class="elementor-animation-bob attachment-full size-full wp-image-89" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Client Logo 5 -->
+                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-13bb2b2" data-id="13bb2b2" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-0eadb78 elementor-widget elementor-widget-image animated fadeInUp" data-id="0eadb78" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <a href="#">
+                                            <img loading="lazy" decoding="async" width="167" height="41" src="https://templatekits.themewarrior.com/stellar/wp-content/uploads/sites/50/2022/03/logo-ipsum5.png" class="elementor-animation-bob attachment-full size-full wp-image-88" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="why-choose-us" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Content -->
+            <div class="col-lg-6 mb-4">
+                <!-- <h6 class="text-uppercase text-primary">Hosting «</h6> -->
+                <h2 class="font-weight-bold">Vì Sao Khách Hàng Nên Lựa Chọn CloudAZ?</h2>
+                <img src="{% static 'home/images/your-image-path.jpg' %}" alt="Why Choose Us" class="img-fluid mt-4">
+            </div>
+            <!-- Right Content -->
+            <div class="col-lg-6">
+                <div class="d-flex mb-4 align-items-start">
+                    <i class="fas fa-file-alt fa-3x text-primary mr-3"></i>
+                    <div>
+                        <h4 class="font-weight-bold">Đối tác Đầu Tiên tại Việt Nam</h4>
+                        <p>Vinh dự là đối tác chiến lược cấp cao đầu tiên của DigitalOcean tại Việt Nam, CloudAZ cam kết mang đến cho khách hàng dịch vụ chất lượng vượt trội.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4 align-items-start">
+                    <i class="fas fa-receipt fa-3x text-primary mr-3"></i>
+                    <div>
+                        <h4 class="font-weight-bold">Giá cả cạnh tranh, cung cấp hóa đơn VAT</h4>
+                        <p>Chi phí tiết kiệm giúp doanh nghiệp tối ưu ngân sách và nâng cao năng suất.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4 align-items-start">
+                    <i class="fas fa-cogs fa-3x text-primary mr-3"></i>
+                    <div>
+                        <h4 class="font-weight-bold">Quản lý dịch vụ</h4>
+                        <p>CloudAZ cung cấp dịch vụ quản lý chuyên nghiệp, tối ưu hóa hệ thống và chi phí, cam kết minh bạch, rõ ràng và không có chi phí ẩn.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4 align-items-start">
+                    <i class="fas fa-headset fa-3x text-primary mr-3"></i>
+                    <div>
+                        <h4 class="font-weight-bold">Hỗ trợ 24/7</h4>
+                        <p>Đội ngũ kỹ thuật dày dặn kinh nghiệm sẵn sàng hỗ trợ chuyên nghiệp.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-success btn-lg font-weight-bold">Đăng Ký Ngay</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="featured-services" class="py-5">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="text-center mb-5">
+            <!-- <h6 class="text-uppercase text-primary">Product «</h6> -->
+            <h2 class="font-weight-bold">Các Dịch Vụ Nổi Bật</h2>
+            <!-- <a href="#" class="btn btn-outline-primary">View All</a> -->
+        </div>
+
+        <!-- Services Grid -->
+        <div class="row">
+            <!-- Service Card: Droplets -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <img src="http://165.232.141.220/wp-content/uploads/elementor/thumbs/droplets-qzb5x1o9ldpexa9eblgkvilb8ls21sfle16lovxcrk.png" alt="Droplets">
+                    </div>
+                    <h4 class="font-weight-bold">Droplets</h4>
+                    <p class="text-muted">Dịch vụ máy chủ ảo dễ dàng triển khai, quản lý và tối ưu chi phí</p>
+                    <a href="#" class="service-btn"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card: Kubernetes -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <img src="http://165.232.141.220/wp-content/uploads/elementor/thumbs/kubernetes-qzb5x3jxz1rzki6o0m9u0i48fdish6n22ahknfukf4.png" alt="Kubernetes">
+                    </div>
+                    <h4 class="font-weight-bold">Kubernetes</h4>
+                    <p class="text-muted">Giải pháp tối ưu hóa quản lý hạ tầng cho doanh nghiệp</p>
+                    <a href="#" class="service-btn"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card: App Platform -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <img src="http://165.232.141.220/wp-content/uploads/elementor/thumbs/app-platform-qzb5x5fmcpuk7q3xpn335hn5m59iwkuiqjsjlzrs2o.png" alt="App Platform">
+                    </div>
+                    <h4 class="font-weight-bold">App Platform</h4>
+                    <p class="text-muted">Triển khai ứng dụng một cách nhanh chóng</p>
+                    <a href="#" class="service-btn"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card: Database -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <img src="http://165.232.141.220/wp-content/uploads/elementor/thumbs/database-qzb5x7baqdx4uy17enwcah62sx09bz1zet3ikjozq8.png" alt="Database">
+                    </div>
+                    <h4 class="font-weight-bold">Database</h4>
+                    <p class="text-muted">Giải pháp thay thế cho việc cài đặt, bảo trì và bảo mật cơ sở dữ liệu thủ công</p>
+                    <a href="#" class="service-btn"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card: Spaces -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <img src="http://165.232.141.220/wp-content/uploads/elementor/thumbs/cloudspace-qzb5xa4taw0ztrx3y747zyggl2mcz2d6f71z0dkt7k.png" alt="Spaces">
+                    </div>
+                    <h4 class="font-weight-bold">Spaces</h4>
+                    <p class="text-muted">Lưu trữ tối đa với chi phí tối ưu cho doanh nghiệp</p>
+                    <a href="#" class="service-btn"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card: Load Balancer -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <div class="service-icon mb-3">
+                        <img src="http://165.232.141.220/wp-content/uploads/elementor/thumbs/balancer-qzb5xdw6286547rnc8qq9xiaym3ttus3rpnwxhf8io.png" alt="Load Balancer">
+                    </div>
+                    <h4 class="font-weight-bold">Load Balancer</h4>
+                    <p class="text-muted">Giải pháp cân bằng tải linh hoạt, hỗ trợ toàn cầu</p>
+                    <a href="#" class="service-btn"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,412 @@
+/* Thêm vào style.css */
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.navbar-brand img.logo-img {
+    width: auto;
+    height: 60px; /* Tăng chiều cao logo */
+    object-fit: contain;
+}
+
+.navbar .nav-link {
+    font-size: 20px; /* Tăng size chữ của menu items */
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.navbar .dropdown-item {
+    font-size: 15px;
+    padding: 8px 20px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navbar-brand img.logo-img {
+        height: 40px; /* Điều chỉnh kích thước logo trên mobile */
+    }
+}
+
+.hero {
+    padding: 50px 0; /* Thêm khoảng cách trên và dưới */
+    background-color: #0257b3; /* Nền xanh nếu muốn */
+    color: white; /* Màu chữ */
+}
+.hero .container {
+    max-width: 1200px; /* Giới hạn chiều rộng của container */
+}
+.hero h1, .hero p {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Thêm bóng chữ để chữ dễ đọc hơn */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Giảm kích thước tiêu đề nếu cần */
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.125rem; /* Cỡ chữ đoạn văn */
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #d0ff3e; /* Màu xanh lá */
+    color: #000; /* Màu chữ đen */
+    border: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    transition: all 0.3s ease; /* Hiệu ứng hover mượt */
+}
+
+.btn-primary:hover {
+    background-color: #c4f237; /* Màu sáng hơn khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Tăng bóng khi hover */
+    transform: translateY(-2px); /* Di chuyển nhẹ lên khi hover */
+}
+
+.btn-outline-primary {
+    border: 2px solid #fff; /* Viền trắng */
+    color: #fff; /* Màu chữ trắng */
+    padding: 12px 24px;
+    border-radius: 8px; /* Bo tròn góc */
+    font-weight: bold;
+    background: none; /* Nền trong suốt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    transition: all 0.3s ease; /* Hiệu ứng hover mượt */
+}
+
+.btn-outline-primary:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Nền trắng nhạt khi hover */
+    transform: translateY(-2px); /* Di chuyển nhẹ lên khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Tăng bóng khi hover */
+}
+
+.navbar {
+    padding: 5px 0 !important; /* Giảm padding trên và dưới */
+    background-color: #1034A6; /* Đảm bảo màu nền */
+}
+
+.navbar-brand img {
+    height: 50px; /* Giảm chiều cao logo */
+}
+
+.navbar-nav .nav-link {
+    padding: 5px 10px; /* Giảm khoảng cách trên dưới của các liên kết */
+    font-size: 14px; /* Điều chỉnh kích thước chữ nếu cần */
+}
+
+.navbar-toggler {
+    padding: 5px 10px; /* Giảm kích thước của nút toggle trên mobile */
+}
+
+
+/* css cho phần about */
+/* General styles for the clients section */
+/* General styles for the clients section */
+#clients {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+/* Styling the container to maintain horizontal alignment */
+.elementor-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    justify-content: center; /* Center-aligns all items */
+    align-items: center;
+    gap: 100px; /* Adds space between each item */
+}
+
+/* Ensures all columns have proper size */
+.elementor-column {
+    flex: 0 0 auto; /* Keeps items at their intrinsic size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the logo images */
+.elementor-widget-image img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.elementor-widget-image img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .elementor-container {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    }
+    .elementor-column {
+        flex: 1 1 calc(33.33% - 40px); /* Fits 3 items per row */
+        max-width: calc(33.33% - 40px);
+    }
+}
+
+@media (max-width: 576px) {
+    .elementor-column {
+        flex: 1 1 calc(50% - 40px); /* Fits 2 items per row */
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 400px) {
+    .elementor-column {
+        flex: 1 1 100%; /* Full width for single-column layout */
+        max-width: 100%;
+    }
+}
+
+/* Styling for the heading element */
+.elementor-heading-title {
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.5rem; /* Adjusts the font size (increase if needed) */
+    line-height: 2.5rem; /* Increases the height of the heading */
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+
+/* General Section Styling */
+#why-choose-us {
+    padding: 50px 0; /* Adds spacing around the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Row Styling for Balanced Columns */
+#why-choose-us .row {
+    display: flex;
+    align-items: center; /* Ensures both columns align vertically */
+    gap: 30px; /* Adds space between columns */
+}
+
+/* Left Column Styling */
+#why-choose-us .col-lg-6 {
+    flex: 1; /* Ensures equal width for both columns */
+    display: flex;
+    flex-direction: column; /* Stacks content inside the column */
+    justify-content: center; /* Centers content vertically */
+}
+
+#why-choose-us .col-lg-6 img {
+    max-width: 100%; /* Ensures the image spans the container width */
+    height: auto; /* Maintains the aspect ratio */
+    margin-top: 20px; /* Adds spacing above the image */
+    align-self: center; /* Centers the image horizontally */
+}
+
+/* Right Column Content Styling */
+#why-choose-us .d-flex {
+    margin-bottom: 30px; /* Adds spacing between feature blocks */
+    align-items: flex-start; /* Ensures icons and text align properly */
+}
+
+/* Icon Styling */
+#why-choose-us i {
+    font-size: 3rem; /* Adjusts icon size */
+    margin-right: 15px; /* Adds spacing between icon and text */
+    color: #007bff; /* Sets icon color to blue */
+}
+
+/* Feature Heading Styling */
+#why-choose-us h4 {
+    font-weight: bold; /* Makes headings bold */
+    font-size: 1.25rem; /* Adjusts heading size */
+    margin-bottom: 5px; /* Adds spacing below heading */
+    color: #333; /* Dark text color */
+}
+
+/* Feature Description Styling */
+#why-choose-us p {
+    margin: 0;
+    color: #555; /* Subtle gray text */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Button Styling */
+#why-choose-us .btn {
+    font-weight: bold; /* Makes button text bold */
+    padding: 12px 24px; /* Adds padding to the button */
+    font-size: 1.1rem; /* Adjusts font size for better visibility */
+    text-transform: uppercase; /* Capitalizes button text */
+    border-radius: 5px; /* Rounds button corners */
+    background-color: #28a745; /* Green button background */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    display: inline-block; /* Ensures proper button alignment */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+#why-choose-us .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    #why-choose-us .row {
+        flex-direction: column; /* Stacks columns vertically */
+    }
+
+    #why-choose-us .col-lg-6 {
+        margin-bottom: 30px; /* Adds space between stacked sections */
+    }
+}
+
+@media (max-width: 576px) {
+    #why-choose-us i {
+        font-size: 2.5rem; /* Reduces icon size for smaller screens */
+    }
+
+    #why-choose-us .btn {
+        width: 100%; /* Full-width button for smaller screens */
+        text-align: center;
+    }
+}
+
+
+/* Service Card Styling */
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centers content horizontally */
+    height: 100%; /* Ensures equal height for all cards */
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Icon Styling */
+.service-card .service-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* Heading Styling */
+.service-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Centers the heading text */
+}
+
+/* Description Styling */
+.service-card p {
+    color: #666;
+    font-size: 0.95rem;
+    text-align: center; /* Centers the paragraph text */
+    flex-grow: 1; /* Ensures consistent spacing for the button */
+    margin: 10px 0 20px;
+}
+
+/* Button Styling */
+.service-card .service-btn {
+    display: inline-block;
+    background: #c3f75f;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px; /* Slightly larger button */
+    height: 50px;
+    line-height: 50px;
+    text-align: center; /* Centers the arrow horizontally */
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.service-card .service-btn:hover {
+    background: #007bff;
+}
+
+
+
+/* General Footer Styling */
+#footer {
+    background-color: #222;
+    color: #fff;
+}
+
+#footer .footer-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #c3f75f; /* Light green title */
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-menu li {
+    margin-bottom: 10px;
+}
+
+#footer .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer .footer-menu a:hover {
+    color: #c3f75f; /* Light green hover */
+}
+
+#footer .footer-contact li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-contact i {
+    margin-right: 10px;
+    color: #c3f75f; /* Light green icon */
+}
+
+#footer .footer-social {
+    margin-top: 20px;
+}
+
+#footer .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#footer .social-icon:hover {
+    background: #c3f75f;
+    color: #222;
+}
