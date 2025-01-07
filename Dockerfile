@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 # Copy toàn bộ code vào container
 COPY . .
 
-# Expose port 8000 để chạy Django
+# Expose port 80 để chạy Django
 EXPOSE 80
 
 # Command để chạy server
