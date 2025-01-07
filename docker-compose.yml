@@ -15,11 +15,8 @@ services:
     image: nginx:alpine
     ports:
       - "80:80"
-      - "443:443"  # nếu dùng HTTPS
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./certbot/conf:/etc/letsencrypt  # nếu dùng HTTPS
-      - ./certbot/www:/var/www/certbot   # nếu dùng HTTPS
     depends_on:
       - web
     networks:
