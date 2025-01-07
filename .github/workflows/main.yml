@@ -18,7 +18,11 @@ jobs:
       with:
         host: ${{ secrets.159.223.49.206 }}
         username: ${{ secrets.root }}
-        key: ${{ secrets.AhsVYj9qutejBj9g22tuiuV0tzQcPxWrBpqFe7tdlM+1dKNmXjjOoFEZJv1HWQrn
+        key: ${{ secrets.-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: DES-EDE3-CBC,F42512AD2D8E5497
+
+AhsVYj9qutejBj9g22tuiuV0tzQcPxWrBpqFe7tdlM+1dKNmXjjOoFEZJv1HWQrn
 J2RbcF+TEfywmBn+dAY8nKYLyDbGN6Upz4RKaJgRumYvX7m6bbIxTamyK/t9k2+b
 MlG4iruXtWmKJ3JHPwasXU6c/8KfnWo+Auw8w1WqpYEqRtbxamwh21NQ2HjmMJDU
 CoXLiku1O7VhlJ6uXxGbEkZIRk7df1rzfkyHWf6XKiBvhJdD8azcNGwURQDwmGv+
@@ -42,7 +46,8 @@ WjuEwV3wufw833Nu8rd9N079CtmMr/OpZWcvhUb4LT8AA+KHlbjIKZ2NPMTI/S5V
 a7a9f0Bczkqcwij01fD1rLsP40RgPZ5bfmvSL2PcnbxvVOMOXTko2mldCJGWqjwP
 wSTRWZPbBvwtoxVLye0/zivQK0WPpe1ESnJ4y3kmvla3leeI4ZOkuwfZfpN4xSha
 nUW3uQddXp6c2h7vG+rllDH19HWtoxkQEpIXyR3QigQBwN4kWe0rd35Y+sn5nIDg
-x0g8jlCU/3mNfk6PiheQ0UOlqzPu3sbaZ6rYjQ6SS/gIj9pvBCK97p7+rAxKUawR }}
+x0g8jlCU/3mNfk6PiheQ0UOlqzPu3sbaZ6rYjQ6SS/gIj9pvBCK97p7+rAxKUawR
+-----END RSA PRIVATE KEY----- }}
         script: |
           cd /home/docker_/django_docker_repo
           git pull origin main
