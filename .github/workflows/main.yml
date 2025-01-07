@@ -48,10 +48,4 @@ wSTRWZPbBvwtoxVLye0/zivQK0WPpe1ESnJ4y3kmvla3leeI4ZOkuwfZfpN4xSha
 nUW3uQddXp6c2h7vG+rllDH19HWtoxkQEpIXyR3QigQBwN4kWe0rd35Y+sn5nIDg
 x0g8jlCU/3mNfk6PiheQ0UOlqzPu3sbaZ6rYjQ6SS/gIj9pvBCK97p7+rAxKUawR
 -----END RSA PRIVATE KEY----- }}
-        script: |
-          cd /home/docker_/django_docker_repo
-          git pull origin main
-          docker-compose down
-          docker rmi django_landingpage:latest || true
-          docker-compose build
-          docker-compose up -d
+        script: cd /home/docker_/django_docker_repo && git pull origin main && docker-compose down && docker rmi django_landingpage:latest || true && docker-compose build && docker-compose up -d
